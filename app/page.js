@@ -1,11 +1,12 @@
 import { Footer, Navbar } from "@/components";
-import { Hero, Roadmap, Tokenomics } from "@/sections";
+import { Hero, Projects, Roadmap, Tokenomics } from "@/sections";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-primary-black overflow-hidden">
       <Navbar />
       <Hero />
+      <Projects />
       <Tokenomics />
       <Roadmap />
       <Footer />
