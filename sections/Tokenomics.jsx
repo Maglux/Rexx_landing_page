@@ -1,5 +1,6 @@
 "use client";
 
+import { DougnutChart } from "@/components";
 import { TitleTextTyping } from "@/components/CustomTexts";
 import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/motion";
@@ -61,11 +62,12 @@ const Tokenomics = () => {
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
           {/* <Doughnut data={data} /> */}
-          <img
+          {/* <img
             src="/Tokenomics_img.jpg"
             alt="tokenomics image"
             className="w-full h-full shadow-md hover:border-2 hover:border-purple-500 shadow-white rounded-lg"
-          />
+          /> */}
+          <DougnutChart />
         </motion.div>
       </motion.div>
     </section>

@@ -5,6 +5,7 @@ import ProjectsCard from "./ProjectsCard";
 import CustomButton from "./CustomButton";
 import MilestoneSteps from "./MilestoneSteps";
 import NewFeatures from "./NewFeatures";
+import DougnutChart from "./DougnutChart";
 
 export {
   Navbar,
@@ -15,4 +16,5 @@ export {
   CustomButton,
   MilestoneSteps,
   NewFeatures,
+  DougnutChart,
 };

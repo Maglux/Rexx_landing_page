@@ -18,7 +18,9 @@ const ProjectsCard = ({
       active === id
         ? "lg:flex-[3.5] flex-[10]  hover:border-2 hover:border-white rounded-[24px] shadow-md shadow-gray-200 hover:shadow-purple-400"
         : "lg:flex-[0.5] flex-[2]"
-    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer
+    
+    `}
     onClick={() => handleClick(id)}
   >
     <img
