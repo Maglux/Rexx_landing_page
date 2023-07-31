@@ -2,5 +2,17 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { TypingText, TitleText } from "./CustomTexts";
 import ProjectsCard from "./ProjectsCard";
+import CustomButton from "./CustomButton";
+import MilestoneSteps from "./MilestoneSteps";
+import NewFeatures from "./NewFeatures";
 
-export { Navbar, Footer, TypingText, TitleText, ProjectsCard };
+export {
+  Navbar,
+  Footer,
+  TypingText,
+  TitleText,
+  ProjectsCard,
+  CustomButton,
+  MilestoneSteps,
+  NewFeatures,
+};
