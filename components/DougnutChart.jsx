@@ -4,6 +4,9 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 const options = {
+  credits: {
+    enabled: false,
+  },
   chart: {
     backgroundColor: "black",
     type: "pie",

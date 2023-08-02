@@ -2,11 +2,57 @@
 
 import { motion } from "framer-motion";
 
-import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
+import {
+  fadeIn,
+  slideIn,
+  staggerContainer,
+  textVariant,
+  zoomIn,
+} from "@/utils/motion";
 import styles from "@/styles";
+import { Tilt } from "react-tilt";
+import { exploreProjects, heroProjects } from "@/constants";
+import { CustomButton } from "@/components";
+
+const ProjectCardHeroSection = ({ index, title, icon, desc, btnText }) => (
+  <Tilt className="xs:w-[250px] md:w-full">
+    <motion.div
+      variants={fadeIn("right", "tween", index * 0.5, 0.1)}
+      className="w-full green-pink-gradient p-[0.5px] rounded-[12px] shadow-card
+      text-red hover:before:bg-[#9548ee] relative text-xs overflow-hidden border border-[#9548ee] bg-transparent text-white transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#9548ee] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full
+      "
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-black relative z-10 rounded-[12px] py-5 px-12 min-h-[280px] flex justify-between flex-col gap-4"
+      >
+        <motion.div variants={zoomIn(0.5, 1)}>
+          <img
+            src={icon}
+            alt="web-development"
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+
+        <h3 className="text-white text-[20px] font-bold">{title}</h3>
+
+        <h3 className="text-white text-[10px] ">{desc}</h3>
+
+        <CustomButton
+          btnText={btnText}
+          btnStyles="md:px-5 px-4 md:py-2 py-2.5 tracking-wider min-w-fit"
+        />
+      </div>
+    </motion.div>
+  </Tilt>
+);
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className={`${styles.paddings}`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -14,12 +60,13 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
+      <div className="flex justify-center items-center flex-col relative z-10 gap-4">
         <motion.h1
           variants={textVariant(1.1)}
-          className={styles.heroHeading}
+          className="text-md text-white text-[24px]"
         >
-          Rexx
+          The Home of <span className="text-[#9548ee]">Rexx</span>{" "}
+          ecosystem
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
@@ -28,10 +75,23 @@ const Hero = () => (
           {/* <h1 className={styles.heroHeading}>Ma</h1>
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>Ness</h1> */}
-          <h1 className={styles.heroHeading}>Ecosystem</h1>
+          <h1 className="text-sm text-white w-[50%] text-[18px] text-center">
+            Powered by the Rexx Coin, presenting a wide array of
+            decentralized solution across various sectors:{" "}
+            <span className="text-[#9548ee]">Enter The RexxVerse</span>
+          </h1>
         </motion.div>
+        <div className="mt-20 flex flex-wrap md:flex-nowrap gap-10 justify-center md:px-20">
+          {heroProjects.map((project, index) => (
+            <ProjectCardHeroSection
+              key={project.title}
+              index={index}
+              {...project}
+            />
+          ))}
+        </div>
       </div>
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
@@ -41,16 +101,7 @@ const Hero = () => (
           alt="cover"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
-        {/* <a href="#tokenomics">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[15px] pr-[20px] relative z-10">
-            <img
-              src="/arrow-down.svg"
-              alt="down-arrow"
-              className="sm:w-[40px] w-[30px] sm:h-[40px] h-[30px] object-contain border-[2px] rounded-full py-1 px-1"
-            />
-          </div>
-        </a> */}
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   </section>
 );

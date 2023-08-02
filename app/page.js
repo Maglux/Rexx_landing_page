@@ -5,6 +5,7 @@ import {
   OurOffering,
   Projects,
   Roadmap,
+  RoadmapDesign_2,
   Tokenomics,
 } from "@/sections";
 
@@ -13,17 +14,13 @@ export default function Home() {
     <div className="bg-black overflow-hidden">
       <Navbar />
       <Hero />
-      <div className="relative">
-        <Mission />
-        <div className="gradient-03 z-0" />
-        <OurOffering />
-      </div>
-      <div className="relative">
-        <Projects />
-        <div className="gradient-04 z-0" />
-        <Tokenomics />
-      </div>
-      <Roadmap />
+      <OurOffering />
+
+      <Mission />
+      {/* <Projects /> */}
+      <Tokenomics />
+      {/* <Roadmap /> */}
+      <RoadmapDesign_2 />
       <Footer />
     </div>
   );
