@@ -9,19 +9,23 @@ import {
   RoadmapDesign_2,
   Tokenomics,
 } from "@/sections";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export default function Home() {
   return (
     <div className="bg-black overflow-hidden">
       <Navbar />
-      <Hero />
-      <HeroAnimation />
-      <OurOffering />
-      <Mission />
-      {/* <Projects /> */}
-      <Tokenomics />
-      {/* <Roadmap /> */}
-      <RoadmapDesign_2 />
+      <Suspense fallback={<Loading />}>
+        <Hero />
+        <HeroAnimation />
+        <OurOffering />
+        <Mission />
+        {/* <Projects /> */}
+        <Tokenomics />
+        {/* <Roadmap /> */}
+        <RoadmapDesign_2 />
+      </Suspense>
       <Footer />
     </div>
   );

@@ -26,7 +26,7 @@ const Navbar = () => (
         alt="rexxlogo"
         className="w-auto md:h-[28px] h-[30px] object-contain"
       />
-      <div className="flex md:gap-10 ">
+      <div className="flex md:gap-10">
         <CustomButton
           btnBuyText="BUY"
           btnType="buyBtn"
