@@ -1,6 +1,7 @@
 import { Footer, Navbar } from "@/components";
 import {
   Hero,
+  HeroAnimation,
   Mission,
   OurOffering,
   Projects,
@@ -14,8 +15,8 @@ export default function Home() {
     <div className="bg-black overflow-hidden">
       <Navbar />
       <Hero />
+      <HeroAnimation />
       <OurOffering />
-
       <Mission />
       {/* <Projects /> */}
       <Tokenomics />

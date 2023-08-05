@@ -31,8 +31,11 @@ const ProjectCardHeroSection = ({ index, title, icon, desc, btnText }) => (
         className="bg-black relative z-10 rounded-[12px] py-5 px-12 min-h-[280px] flex justify-between flex-col gap-4"
       >
         <motion.div variants={zoomIn(0.5, 1)}>
-          <img
+          <video
             src={icon}
+            autoPlay
+            loop
+            muted
             alt="web-development"
             className="w-full h-full object-contain"
           />
@@ -75,13 +78,13 @@ const Hero = () => (
           {/* <h1 className={styles.heroHeading}>Ma</h1>
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>Ness</h1> */}
-          <h1 className="text-sm text-white w-[50%] text-[18px] text-center">
+          <h1 className="text-sm text-white md:w-[60%] text-[18px] text-center">
             Powered by the Rexx Coin, presenting a wide array of
             decentralized solution across various sectors:{" "}
             <span className="text-[#9548ee]">Enter The RexxVerse</span>
           </h1>
         </motion.div>
-        <div className="mt-20 flex flex-wrap md:flex-nowrap gap-10 justify-center md:px-20">
+        <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-center md:px-20">
           {heroProjects.map((project, index) => (
             <ProjectCardHeroSection
               key={project.title}

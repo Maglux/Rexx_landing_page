@@ -1,19 +1,28 @@
 export const socials = [
   {
     name: "twitter",
-    url: "/twitter.svg",
+    icon: "/twitter.svg",
+    url: "https://twitter.com/RexxCoin",
   },
-  {
-    name: "linkedin",
-    url: "/linkedin.svg",
-  },
+  // {
+  //   name: "linkedin",
+  //   icon: "/linkedin.svg",
+  //   url: "",
+  // },
   {
     name: "instagram",
-    url: "/instagram.svg",
+    icon: "/instagram.svg",
+    url: "https://Instagram.com/rexxcoin.official/",
   },
   {
     name: "facebook",
-    url: "/facebook.svg",
+    icon: "/facebook.svg",
+    url: "https://facebook.com/rexxcoin.official/",
+  },
+  {
+    name: "telegram",
+    icon: "/telegram.svg",
+    url: "https://t.me/rexxcoin",
   },
 ];
 
@@ -25,19 +34,19 @@ export const heroProjects = [
   //   desc: "A user-friendly, secure decentralized wallet designed to offer seamless management of digital assets.",
   // },
   {
-    icon: "/Design Sources/Asset 1.svg",
+    icon: "/videos/06.mp4",
     title: "ReXXpay",
     btnText: "COMING SOON",
     desc: "A decentralized payment solution that streamlines in-game transactions leveraging blockchain technology.",
   },
   {
-    icon: "/Design Sources/D3.svg",
+    icon: "/videos/09.mp4",
     title: "ReXXchain",
     btnText: "COMING SOON",
     desc: "Supply chain management by integrating blockchain technology for enhanced transparency and traceability.",
   },
   {
-    icon: "/Design Sources/D8.svg",
+    icon: "/videos/02.mp4",
     title: "ReXXplorer",
     btnText: "COMING SOON",
     desc: "A decentralized world map that provides a visual representation of blockchain activities and inidiatives worldwide.",
@@ -89,6 +98,19 @@ export const exploreProjects = [
     title: "ReXXplorer",
   },
 ];
+
+export const projectVideos = {
+  heroBgVideo: "/videos/heroBg.mp4",
+  rexxVerse: "/videos/01.mp4",
+  video2: "/videos/02.mp4",
+  video3: "/videos/03.mp4",
+  rexxChange: "/videos/04.mp4",
+  video5: "/videos/05.mp4",
+  rexxConnect: "/videos/06.mp4",
+  rexxPress: "/videos/03.mp4",
+  video8: "/videos/08.mp4",
+  video9: "/videos/09.mp4",
+};
 
 export const firstQuarterMilestoneSteps = [
   "Rexx Coin: Complete development of Rexx Coin, our native utility token, on Binance Smart Chain.",

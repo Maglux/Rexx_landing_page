@@ -63,8 +63,11 @@ const Footer = () => (
             {socials.map((social) => (
               <img
                 key={social.name}
-                src={social.url}
+                src={social.icon}
                 alt={social.name}
+                onClick={() => {
+                  window.open(`${social.url}`);
+                }}
                 className="w-[24px] h-[24px] object-contain cursor-pointer"
               />
             ))}

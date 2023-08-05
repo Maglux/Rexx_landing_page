@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import HeroAnimation from "./HeroAnimation";
 import Mission from "./Mission";
 import OurOffering from "./OurOffering";
 import Projects from "./Projects";
@@ -8,6 +9,7 @@ import Tokenomics from "./Tokenomics";
 
 export {
   Hero,
+  HeroAnimation,
   Mission,
   OurOffering,
   Projects,
