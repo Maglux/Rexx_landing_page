@@ -26,19 +26,17 @@ const Navbar = () => (
         alt="rexxlogo"
         className="w-auto md:h-[28px] h-[30px] object-contain"
       />
-      {/* <h2 className="md:flex hidden font-extrabold text-[24px] leading-[30px] text-white">
-        REXXVERSE
-      </h2> */}
-      {/* <img
-        src="/menu.svg"
-        alt="menu"
-        className="w-[24px] h-[24px] object-contain"
-      /> */}
-      {/* <CustomButton btnText="BUY NOW" /> */}
-      <CustomButton
-        handleClick={viewWhitePaper}
-        btnText="VIEW WHITEPAPER &rarr;"
-      />
+      <div className="flex md:gap-10 ">
+        <CustomButton
+          btnBuyText="BUY"
+          btnType="buyBtn"
+          buyLink="https://presale.coinrexx.com"
+        />
+        <CustomButton
+          handleClick={viewWhitePaper}
+          btnText="VIEW WHITEPAPER &rarr;"
+        />
+      </div>
     </div>
   </motion.nav>
 );
