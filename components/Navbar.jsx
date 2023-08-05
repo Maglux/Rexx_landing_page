@@ -6,6 +6,10 @@ import { navVariants } from "@/utils/motion";
 import styles from "@/styles";
 import { CustomButton } from ".";
 
+const viewWhitePaper = () => {
+  window.open("./pdf/whitepaper.pdf");
+};
+
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
@@ -30,7 +34,11 @@ const Navbar = () => (
         alt="menu"
         className="w-[24px] h-[24px] object-contain"
       /> */}
-      <CustomButton btnText="VIEW WHITEPAPER &rarr;" />
+      {/* <CustomButton btnText="BUY NOW" /> */}
+      <CustomButton
+        handleClick={viewWhitePaper}
+        btnText="VIEW WHITEPAPER &rarr;"
+      />
     </div>
   </motion.nav>
 );

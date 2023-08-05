@@ -23,9 +23,15 @@ const Footer = () => (
         <div className="relative group">
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-0  group-hover:opacity-100 transition duration-200 animate-tilt" />
           <a
-            href="/presale"
+            onClick={() => {
+              window.open(
+                "https://rexx-presale-page.vercel.app/",
+                "blank"
+              );
+            }}
+            // href="https://rexx-presale-page.vercel.app/"
             type="button"
-            className="relative flex items-center h-fit py-4 px-6 border-[1px] border-[#9548ee] rounded-[32px] gap-[12px]"
+            className="relative flex items-center h-fit py-4 px-6 border-[1px] border-[#9548ee] rounded-[32px] gap-[12px] cursor-pointer"
           >
             <img
               src="/Rexx_Logo(no_text).png"
