@@ -12,7 +12,9 @@ import {
 import { Suspense } from "react";
 import Loading from "./loading";
 
-export default function Home() {
+export default async function Home() {
+  await wait(10000);
+
   return (
     <div className="bg-black overflow-hidden">
       <Suspense fallback={<Loading />}>
@@ -29,4 +31,8 @@ export default function Home() {
       </Suspense>
     </div>
   );
+}
+
+export async function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
