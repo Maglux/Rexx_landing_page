@@ -1,4 +1,3 @@
-import { projectVideos } from "@/constants";
 import styles from "@/styles";
 import React from "react";
 // import HeroBgVideo from "@/public/videos/heroBg.mp4";

@@ -1,17 +1,8 @@
-"use client";
-
 import { DougnutChart } from "@/components";
 import { TitleTextTyping } from "@/components/CustomTexts";
 import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/motion";
-import {
-  Chart,
-  Tooltip,
-  Title,
-  ArcElement,
-  Legend,
-  plugins,
-} from "chart.js";
+import { Chart, Tooltip, Title, ArcElement, Legend } from "chart.js";
 import { motion } from "framer-motion";
 import { Doughnut } from "react-chartjs-2";
 
@@ -61,12 +52,6 @@ const Tokenomics = () => {
           variants={fadeIn("up", "tween", 0.2, 1)}
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
-          {/* <Doughnut data={data} /> */}
-          {/* <img
-            src="/Tokenomics_img.jpg"
-            alt="tokenomics image"
-            className="w-full h-full shadow-md hover:border-2 hover:border-purple-500 shadow-white rounded-lg"
-          /> */}
           <DougnutChart />
         </motion.div>
       </motion.div>

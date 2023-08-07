@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "@/styles";
 import { fadeIn } from "@/utils/motion";
 import { motion } from "framer-motion";
