@@ -5,7 +5,7 @@ import React from "react";
 
 const HeroAnimation = () => {
   return (
-    <section className={`${styles.yPaddings} relative`}>
+    <section className={`${styles.yPaddings} relative w-[100vw]`}>
       <div
         className={`${styles.yPaddings} absolute top-0 left-0 h-full w-full bg-black  opacity-[0.25] `}
       />
@@ -13,8 +13,9 @@ const HeroAnimation = () => {
         autoPlay
         loop
         muted
-        src={projectVideos.heroBgVideo}
-        className=" backdrop-filter"
+        // src={projectVideos.heroBgVideo}
+        src="/videos/heroBg.mp4"
+        className=" backdrop-filter w-full"
       />
     </section>
   );
