@@ -17,18 +17,19 @@ export default async function Home() {
 
   return (
     <div className="bg-black overflow-hidden">
-      <Suspense fallback={<Loading />}>
-        <Navbar />
-        <Hero />
-        <HeroAnimation />
-        <OurOffering />
-        <Mission />
-        {/* <Projects /> */}
-        <Tokenomics />
-        {/* <Roadmap /> */}
-        <RoadmapDesign_2 />
-        <Footer />
-      </Suspense>
+      <Loading />
+      {/* <Suspense fallback={<Loading />}> */}
+      <Navbar />
+      <Hero />
+      <HeroAnimation />
+      <OurOffering />
+      <Mission />
+      {/* <Projects /> */}
+      <Tokenomics />
+      {/* <Roadmap /> */}
+      <RoadmapDesign_2 />
+      <Footer />
+      {/* </Suspense> */}
     </div>
   );
 }

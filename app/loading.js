@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loading = async () => {
+const Loading = () => {
   return (
     <section className="bg-black overflow-hidden h-[100vh] flex justify-center items-center">
       <div className="w-full h-full flex justify-center items-center flex-col gap-4">
