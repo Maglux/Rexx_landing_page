@@ -1,8 +1,8 @@
 import React from "react";
 
-const Loading = () => {
+const Loader = () => {
   return (
-    <section className="bg-black overflow-hidden h-[100vh] flex justify-center items-center">
+    <section className="fixed z-50 top-0 left-0 bg-black overflow-hidden h-[100vh] w-[100vw] flex justify-center items-center">
       <div className="w-full h-full flex justify-center items-center flex-col gap-4">
         <img
           src="/animation_circle_small_5.gif"
@@ -15,4 +15,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default Loader;

@@ -6,6 +6,7 @@ import CustomButton from "./CustomButton";
 import MilestoneSteps from "./MilestoneSteps";
 import NewFeatures from "./NewFeatures";
 import DougnutChart from "./DougnutChart";
+import Loader from "./Loader";
 
 export {
   Navbar,
@@ -17,4 +18,5 @@ export {
   MilestoneSteps,
   NewFeatures,
   DougnutChart,
+  Loader,
 };

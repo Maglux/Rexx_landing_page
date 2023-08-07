@@ -1,4 +1,6 @@
-import { Footer, Navbar } from "@/components";
+"use client";
+
+import { Footer, Loader, Navbar } from "@/components";
 import {
   Hero,
   HeroAnimation,
@@ -9,15 +11,22 @@ import {
   RoadmapDesign_2,
   Tokenomics,
 } from "@/sections";
-import { Suspense } from "react";
-import Loading from "./loading";
+import { Suspense, useEffect, useState } from "react";
 
-export default async function Home() {
-  await wait(10000);
+export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  // await wait(10000);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
 
   return (
     <div className="bg-black overflow-hidden">
-      <Loading />
+      {loading && <Loader />}
       {/* <Suspense fallback={<Loading />}> */}
       <Navbar />
       <Hero />
@@ -34,6 +43,6 @@ export default async function Home() {
   );
 }
 
-export async function wait(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+// export async function wait(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
