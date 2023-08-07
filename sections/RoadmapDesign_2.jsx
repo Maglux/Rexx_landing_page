@@ -6,23 +6,11 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { roadmapDetails } from "../constants";
-// import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import styles from "@/styles";
 import { fadeIn, textVariant } from "@/utils/motion";
-import Lottie from "lottie-react";
-import animationData from "../public/animation_circle";
-import { TitleTextTyping } from "@/components/CustomTexts";
 
 const RoadmapCard = ({ roadmap }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <VerticalTimelineElement
       contentStyle={{

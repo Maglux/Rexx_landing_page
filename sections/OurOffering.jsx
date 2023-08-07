@@ -2,23 +2,9 @@
 
 import { motion } from "framer-motion";
 import styles from "@/styles";
-import {
-  fadeIn,
-  staggerContainer,
-  planetVariants,
-  zoomIn,
-} from "@/utils/motion";
-import {
-  TypingText,
-  TitleText,
-  MilestoneSteps,
-  CustomButton,
-} from "@/components";
-import {
-  firstQuarterMilestoneSteps,
-  ourOffering,
-  projectVideos,
-} from "@/constants";
+import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
+import { TypingText, CustomButton } from "@/components";
+import { projectVideos } from "@/constants";
 import { TitleTextTyping } from "@/components/CustomTexts";
 
 const OurOffering = () => {

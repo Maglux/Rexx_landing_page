@@ -18,15 +18,15 @@ export default function Home() {
 
   // await wait(10000);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
+  // }, []);
 
   return (
     <div className="bg-black overflow-hidden">
-      {loading && <Loader />}
+      {/* {loading && <Loader />} */}
       {/* <Suspense fallback={<Loading />}> */}
       <Navbar />
       <Hero />

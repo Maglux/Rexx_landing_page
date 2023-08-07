@@ -1,8 +1,5 @@
 "use client";
 
-import Lottie from "lottie-react";
-import AnimationCircle from "@/public/animation_circle.json";
-
 const CustomButton = ({
   btnType,
   btnText,
