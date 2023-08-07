@@ -33,7 +33,9 @@ const Navbar = () => (
           buyLink="https://presale.coinrexx.com"
         />
         <CustomButton
-          handleClick={viewWhitePaper}
+          handleClick={() => {
+            window.open("https://coinrexx.com/Rexx-Whitepaper.pdf");
+          }}
           btnText="VIEW WHITEPAPER &rarr;"
         />
       </div>

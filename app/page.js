@@ -15,8 +15,8 @@ import Loading from "./loading";
 export default function Home() {
   return (
     <div className="bg-black overflow-hidden">
-      <Navbar />
       <Suspense fallback={<Loading />}>
+        <Navbar />
         <Hero />
         <HeroAnimation />
         <OurOffering />
@@ -25,8 +25,8 @@ export default function Home() {
         <Tokenomics />
         {/* <Roadmap /> */}
         <RoadmapDesign_2 />
+        <Footer />
       </Suspense>
-      <Footer />
     </div>
   );
 }
