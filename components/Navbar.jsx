@@ -28,7 +28,7 @@ const Navbar = () => (
       />
       <div className="flex md:gap-10">
         <CustomButton
-          btnBuyText="BUY"
+          btnBuyText="Buy REXX"
           btnType="buyBtn"
           buyLink="https://presale.coinrexx.com"
         />

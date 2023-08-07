@@ -35,7 +35,7 @@ const CustomButton = ({
             />
           ) : null}
           <span
-            className={`${btnTextStyles} relative z-10  text-[16px]  group-hover:text-black`}
+            className={`${btnTextStyles} relative z-10    group-hover:text-black`}
           >
             {btnBuyText}
           </span>
