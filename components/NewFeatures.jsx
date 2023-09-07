@@ -1,5 +1,5 @@
 const NewFeatures = () => {
-  return <div>NewFeatures</div>;
+  return <div className="text-red-500">NewFeatures</div>;
 };
 
 export default NewFeatures;

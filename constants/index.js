@@ -255,3 +255,31 @@ export const roadmapDetails = [
     ],
   },
 ];
+
+export const faqsData = [
+  {
+    title: "What makes 'INFYNFT' unique compared to other platforms ?",
+    content:
+      "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
+  },
+  {
+    title: "How can I participate as an artist in INFYNFT ?",
+    content:
+      "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
+  },
+  {
+    title: "How does it work ?",
+    content:
+      "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
+  },
+  {
+    title: "How does it work ?",
+    content:
+      "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
+  },
+  {
+    title: "How does it work ?",
+    content:
+      "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
+  },
+];

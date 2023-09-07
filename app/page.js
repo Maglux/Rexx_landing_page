@@ -2,6 +2,8 @@
 
 import { Footer, Loader, Navbar } from "@/components";
 import {
+  Faq,
+  GetInTouch,
   Hero,
   HeroAnimation,
   Mission,
@@ -37,6 +39,8 @@ export default function Home() {
       <Tokenomics />
       {/* <Roadmap /> */}
       <RoadmapDesign_2 />
+      <Faq />
+      <GetInTouch />
       <Footer />
       {/* </Suspense> */}
     </div>

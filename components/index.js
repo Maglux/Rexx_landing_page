@@ -7,7 +7,7 @@ import MilestoneSteps from "./MilestoneSteps";
 import NewFeatures from "./NewFeatures";
 import DougnutChart from "./DougnutChart";
 import Loader from "./Loader";
-
+import FaqCard from "./FaqCard";
 export {
   Navbar,
   Footer,
@@ -19,4 +19,5 @@ export {
   NewFeatures,
   DougnutChart,
   Loader,
+  FaqCard,
 };

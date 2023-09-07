@@ -64,10 +64,9 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10 gap-4">
         <motion.h1
           variants={textVariant(1.1)}
-          className="text-md text-white text-[24px]"
+          className="text-md text-white  text-3xl text-center"
         >
-          The Home of <span className="text-[#9548ee]">Rexx</span>{" "}
-          ecosystem
+          The Home of <span className="text-[#9548ee]">Rexx</span> ecosystem
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
@@ -76,10 +75,10 @@ const Hero = () => (
           {/* <h1 className={styles.heroHeading}>Ma</h1>
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>Ness</h1> */}
-          <h1 className="text-sm text-white md:w-[60%] text-[18px] text-center">
-            Powered by the{" "}
-            <span className="text-[#9548ee]">Rexx Coin</span>, presenting a
-            wide array of decentralized solution across various sectors
+          <h1 className=" text-white md:w-[60%] text-xl text-center">
+            Powered by the <span className="text-[#9548ee]">Rexx Coin</span>,
+            presenting a wide array of decentralized solution across various
+            sectors
           </h1>
         </motion.div>
         <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-center md:px-20">
