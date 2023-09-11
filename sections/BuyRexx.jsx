@@ -46,24 +46,6 @@ const BuyRexx = () => {
             somewhere safe. This is the only way to recover your wallet if you
             ever lose access to it.
           </p>
-          {/* Once you open the website, click the “Get Started” button and then
-          click “Create a Wallet”.{" "}
-          <span className="font-bold text-[#9548ee] text-left text-xl font-bold py-4 py-4">
-            At this point, you will be asked to create a wallet by entering a
-            password. Make sure that your password is secure and not easy to
-            guess.
-          </span>{" "}
-          Once you’ve entered your password, you will be asked to write down
-          your recovery phrase. This is a very important step, as it will be
-          used in case you forget your password.
-          <span className="font-bold text-[#9548ee] text-left text-xl font-bold py-4">
-            blockchain ecosystem.
-          </span>{" "}
-          We aim to facilitate the widespread adoption and understanding of
-          blockchain technology across various sectors such as{" "}
-          <span className="font-bold text-[#9548ee] text-left text-xl font-bold py-4">
-            gaming, finance, news, supply chain, and more.
-          </span>{" "} */}
         </motion.p>
         {/* <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
