@@ -283,3 +283,21 @@ export const faqsData = [
       "Unlike traditional NFT platforms, INFYNFT leverages the power of Web3 technology to provide a decentralized and boundless experience. The platform also offers an immersive metaverse environment, where users can engage with NFTs in a dynamic and interactive way.",
   },
 ];
+
+export const rexcoindata = [
+  {
+    title: "Download the Official Trust Wallet App",
+    content:
+      "Head over to the app store and download the Trust Wallet app. Which is a wallet backed by Binance exchange. It is available on both Android and iOS devices.",
+  },
+  {
+    title: "Create Your Wallet",
+    content:
+      "Once the app is installed, open it and create your wallet. All you need to do is provide a secure password and confirm it. You’ll be ready to go in no time.",
+  },
+  {
+    title: "Backup Your Passphrase",
+    content:
+      "It is important to back up your 12-word passphrase and store it somewhere safe. This is the only way to recover your wallet if you ever lose access to it.",
+  },
+];

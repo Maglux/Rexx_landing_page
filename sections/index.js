@@ -6,6 +6,7 @@ import RoadmapDesign_2 from "./RoadmapDesign_2";
 import Tokenomics from "./Tokenomics";
 import Faq from "./Faq";
 import GetInTouch from "./GetInTouch";
+import BuyRexx from "./BuyRexx";
 
 export {
   Hero,
@@ -16,4 +17,5 @@ export {
   Tokenomics,
   Faq,
   GetInTouch,
+  BuyRexx,
 };

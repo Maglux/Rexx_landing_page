@@ -75,11 +75,11 @@ const Hero = () => (
           {/* <h1 className={styles.heroHeading}>Ma</h1>
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>Ness</h1> */}
-          <h1 className=" text-white md:w-[60%] text-xl text-center">
+          <h2 className=" text-white md:w-[60%] text-xl text-center">
             Powered by the <span className="text-[#9548ee]">Rexx Coin</span>,
             presenting a wide array of decentralized solution across various
             sectors
-          </h1>
+          </h2>
         </motion.div>
         <div className="mt-20 flex flex-wrap md:flex-nowrap gap-8 justify-center md:px-20">
           {heroProjects.map((project, index) => (

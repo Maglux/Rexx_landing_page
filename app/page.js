@@ -2,6 +2,7 @@
 
 import { Footer, Loader, Navbar } from "@/components";
 import {
+  BuyRexx,
   Faq,
   GetInTouch,
   Hero,
@@ -39,6 +40,7 @@ export default function Home() {
       <Tokenomics />
       {/* <Roadmap /> */}
       <RoadmapDesign_2 />
+      <BuyRexx />
       <Faq />
       <GetInTouch />
       <Footer />

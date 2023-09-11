@@ -14,16 +14,6 @@ const GetInTouch = () => (
       viewport={{ once: false, amount: 0.25 }}
       //   className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      {/* <div className=" py-4 my-4 lg:my-20 mx-2 w-full lg:w-4/12">
-      <motion.p
-        variants={textVariant(1.1)}
-        className="text-lg text-white text-center font-medium mx-auto"
-      >
-        Reach out to us through the provided contact form. We value your
-        feedback, questions, and suggestions as we work together to build a
-        better future with XenMax
-      </motion.p>
-    </div> */}
       <div className=" flex flex-col items-center justify-center rounded px-4 py-2 gap-4 ">
         <motion.h1
           variants={textVariant(1.1)}
@@ -32,7 +22,7 @@ const GetInTouch = () => (
           Get In Touch
         </motion.h1>
         <motion.form variants={textVariant(1.1)} className="gap-4">
-          <label className="text-white">First Name</label>
+          <label className="text-white">Name</label>
           <input
             name="name"
             type="name"
